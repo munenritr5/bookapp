@@ -6,10 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Book extends Model
 {
-    protected $guarded = array('id');
+    protected $guarded = array('ISBN10');
 
     public static $rules = array(
-        'id' => 'required',
+        'ISBN10' => 'required',
         'title' => 'required',
         'author' => 'required',
         'publisher' => 'required',

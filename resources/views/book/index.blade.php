@@ -11,10 +11,10 @@
 
 @section('content')
     <table>
-        <tr><th>Id</th><th>Title</th><th>Author</th><th>Publisher</th><th>Price</th></tr>
+        <tr><th>ISBN-10</th><th>Title</th><th>Author</th><th>Publisher</th><th>Price</th></tr>
         @foreach($items as $item)
             <tr>
-                <td>{{$item->id}}</td>
+                <td>{{$item->ISBN10}}</td>
                 <td>{{$item->title}}</td>
                 <td>{{$item->author}}</td>
                 <td>{{$item->publisher}}</td>
